@@ -76,3 +76,18 @@ For example:
 The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
 or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
 will raise an exception.
+
+
+arora.core.get_signal
+---------------------
+``arora.core.get_signal(file, signal_name )``
+
+	Parameters:
+		file : an .edf file
+            The edf file that is to be imported
+
+		signal_name : str or list[str] or List[dict]
+                The name of the signals that is wanted, can also be a list of signals that are wanted
+
+	Returns: list of all the signals that were requested
+
